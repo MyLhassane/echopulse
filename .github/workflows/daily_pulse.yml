@@ -1,0 +1,36 @@
+name: Daily EchoPulse Radar
+
+on:
+  schedule:
+    # يعمل يومياً في الساعة 00:00 بتوقيت جرينتش
+    - cron: "0 0 * * *"
+  workflow_dispatch: # يسمح لك بتشغيله يدوياً للتجربة
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.9"
+
+      - name: Install dependencies
+        run: |
+          pip install -r 005.echopulse/requirements.txt
+
+      - name: Run EchoPulse Script
+        run: |
+          python 005.echopulse/main.py
+
+      - name: Commit and Push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git commit -m "Update Tech Radar: $(date +'%Y-%m-%d')" || exit 0
+          git push
