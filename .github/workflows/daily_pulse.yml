@@ -3,7 +3,8 @@ name: Daily EchoPulse Radar
 on:
   schedule:
     # سيتم التشغيل الساعة 04:40 صباحاً بتوقيت جرينتش (UTC)
-    - cron: "30 5 * * *"
+    - cron: "40 5 * * *"
+  workflow_dispatch:
 
 jobs:
   build:
