@@ -1,19 +1,17 @@
-import json
 import os
-from datetime import datetime, timedelta
-
 import requests
+import json
+from datetime import datetime, timedelta
 
 # --- 1. إعدادات الزمان والمكان ---
 now = datetime.now()
-seven_days_ago = (now - timedelta(days=7)).strftime("%Y-%m-%d")
+seven_days_ago = (now - timedelta(days=7)).strftime('%Y-%m-%d')
 
-year, month, day = now.strftime("%Y"), now.strftime("%m"), now.strftime("%d")
+year, month, day = now.strftime('%Y'), now.strftime('%m'), now.strftime('%d')
 daily_path = f"archive/{year}/{month}/{day}"
 os.makedirs(daily_path, exist_ok=True)
 
-
-# --- 2. جلب البيانات (التنقيب الموضوعي) ---
+# --- 2. جلب البيانات ---
 def fetch_tech_gold():
     print(f"📡 رادار EchoPulse يبحث في مشاريع منذ {seven_days_ago}...")
     url = f"https://api.github.com/search/repositories?q=created:>{seven_days_ago}&sort=stars&order=desc&per_page=12"
@@ -22,47 +20,48 @@ def fetch_tech_gold():
     try:
         response = requests.get(url, headers=headers, timeout=15)
         response.raise_for_status()
-        return response.json().get("items", [])
+        return response.json().get('items', [])
     except Exception as e:
         print(f"❌ خطأ في الجلب: {e}")
         return []
 
-
-# --- 3. بناء تقرير اليوم (مع ميزة الفلترة بالوسوم) ---
+# --- 3. بناء تقرير اليوم (مع ميزة المفضلة والفلترة) ---
 def create_daily_html(repos):
     print(f"🎨 توليد تقرير اليوم البصري...")
 
     cards_html = ""
     for r in repos:
-        topics = r.get("topics", [])
-        topics_joined = ",".join(topics)  # تجهيز الوسوم للفلترة البرمجية
+        topics = r.get('topics', [])
+        topics_joined = ",".join(topics)
 
-        # تحويل الوسم لزر قابل للضغط يقوم بتشغيل دالة الفلترة
-        topics_html = "".join(
-            [
-                f'<button onclick="filterByTag(\'{t}\')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#{t}</button>'
-                for t in topics[:6]
-            ]
-        )
+        topics_html = "".join([
+            f'<button onclick="filterByTag(\'{t}\')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#{t}</button>'
+            for t in topics[:6]
+        ])
 
-        # أضفنا الكلاس repo-card و data-topics لتتعرف عليها الجافا سكريبت
+        # أضفنا data-repo-id وزر النجمة للحفظ
         cards_html += f"""
-        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl" data-topics="{topics_joined}">
-            <div class="flex justify-between items-start">
-                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">{r["name"]}</h2>
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="{topics_joined}" data-repo-id="{r['id']}">
+
+            <button onclick="toggleBookmark('{r['id']}')" id="star-{r['id']}" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">{r['name']}</h2>
                 <div class="flex items-center gap-2">
-                    <span class="text-yellow-500 text-sm">⭐ {r["stargazers_count"]}</span>
+                    <span class="text-yellow-500 text-sm">⭐ {r['stargazers_count']}</span>
                 </div>
             </div>
-            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">{r["description"] or "لا يوجد وصف من المصدر."}</p>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">{r['description'] or 'لا يوجد وصف من المصدر.'}</p>
 
             <div class="mt-4 flex flex-wrap">
                 {topics_html}
             </div>
 
             <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
-                <span class="text-xs text-slate-500 font-mono">{r["language"] or "Mixed"}</span>
-                <a href="{r["html_url"]}" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+                <span class="text-xs text-slate-500 font-mono">{r['language'] or 'Mixed'}</span>
+                <a href="{r['html_url']}" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
             </div>
         </div>
         """
@@ -77,14 +76,17 @@ def create_daily_html(repos):
     </head>
     <body class="bg-[#0f172a] text-slate-200 p-6 md:p-12">
         <div class="max-w-5xl mx-auto">
-            <header class="flex justify-between items-center mb-6">
+            <header class="flex justify-between items-center mb-6 border-b border-slate-800 pb-6">
                 <div>
                     <a href="../../../../index.html" class="text-emerald-400 hover:underline text-sm">← الفهرس الرئيسي</a>
                     <h1 class="text-3xl font-black text-white mt-2">نبض التقنية <span class="text-emerald-500">{day}.{month}.{year}</span></h1>
                 </div>
-                <div class="text-left">
-                    <span class="block text-xs text-slate-500">تم الرصد بواسطة</span>
-                    <span class="font-mono text-emerald-400">EchoPulse_Bot</span>
+                <div class="flex flex-col items-end gap-3">
+                    <span class="block text-xs text-slate-500">تم الرصد بواسطة <span class="font-mono text-emerald-400">EchoPulse_Bot</span></span>
+
+                    <button onclick="toggleFavoritesView()" id="fav-view-btn" class="bg-slate-800 hover:bg-slate-700 text-sm px-4 py-2 rounded-lg border border-slate-700 transition-colors flex items-center gap-2">
+                        <span>⭐</span> عرض مفضلتي
+                    </button>
                 </div>
             </header>
 
@@ -96,10 +98,83 @@ def create_daily_html(repos):
         </div>
 
         <script>
+            // --- 1. نظام المفضلة (Local Storage) ---
+            function getFavs() {{
+                return JSON.parse(localStorage.getItem('echopulse_favs') || '[]');
+            }}
+
+            function saveFavs(favs) {{
+                localStorage.setItem('echopulse_favs', JSON.stringify(favs));
+            }}
+
+            function toggleBookmark(id) {{
+                let favs = getFavs();
+                let index = favs.indexOf(String(id));
+                let btn = document.getElementById('star-' + id);
+
+                if (index === -1) {{
+                    favs.push(String(id)); // إضافة
+                    btn.innerHTML = '★';
+                    btn.classList.add('text-yellow-400');
+                    btn.classList.remove('text-slate-600');
+                }} else {{
+                    favs.splice(index, 1); // إزالة
+                    btn.innerHTML = '☆';
+                    btn.classList.remove('text-yellow-400');
+                    btn.classList.add('text-slate-600');
+                }}
+                saveFavs(favs);
+            }}
+
+            // تلوين النجوم عند تحميل الصفحة للمشاريع المحفوظة مسبقاً
+            document.addEventListener('DOMContentLoaded', () => {{
+                let favs = getFavs();
+                favs.forEach(id => {{
+                    let btn = document.getElementById('star-' + id);
+                    if (btn) {{
+                        btn.innerHTML = '★';
+                        btn.classList.add('text-yellow-400');
+                        btn.classList.remove('text-slate-600');
+                    }}
+                }});
+            }});
+
+            // --- 2. نظام العرض (الفلاتر) ---
+            let showingFavsOnly = false;
+
+            function toggleFavoritesView() {{
+                showingFavsOnly = !showingFavsOnly;
+                let favs = getFavs();
+                let cards = document.querySelectorAll('.repo-card');
+                let btn = document.getElementById('fav-view-btn');
+
+                if (showingFavsOnly) {{
+                    btn.innerHTML = '🔙 العودة للكل';
+                    btn.classList.add('bg-yellow-500/20', 'border-yellow-500/50');
+                    let count = 0;
+                    cards.forEach(card => {{
+                        let id = card.getAttribute('data-repo-id');
+                        if (favs.includes(id)) {{
+                            card.style.display = 'block';
+                            count++;
+                        }} else {{
+                            card.style.display = 'none';
+                        }}
+                    }});
+                    document.getElementById('filter-status').innerHTML = 'تصفية حسب: <span class="bg-yellow-500/20 text-yellow-400 px-2 py-1 rounded mx-2">⭐ المفضلة</span> (' + count + ' نتائج)';
+                }} else {{
+                    btn.innerHTML = '<span>⭐</span> عرض مفضلتي';
+                    btn.classList.remove('bg-yellow-500/20', 'border-yellow-500/50');
+                    resetFilter();
+                }}
+            }}
+
             function filterByTag(tag) {{
+                if(showingFavsOnly) toggleFavoritesView(); // إلغاء وضع المفضلة إذا تم اختيار وسم
+
                 let cards = document.querySelectorAll('.repo-card');
                 let count = 0;
-                cards.forEach(function(card) {{
+                cards.forEach(card => {{
                     let tags = card.getAttribute('data-topics').split(',');
                     if (tags.includes(tag)) {{
                         card.style.display = 'block';
@@ -109,7 +184,6 @@ def create_daily_html(repos):
                     }}
                 }});
 
-                // تحديث حالة الفلتر وإظهار زر الإلغاء
                 document.getElementById('filter-status').innerHTML =
                     'تصفية حسب: <span class="bg-emerald-500/20 px-2 py-1 rounded mx-2">#' + tag + '</span> (' + count + ' نتائج) ' +
                     '<button onclick="resetFilter()" class="mr-4 text-red-400 hover:text-red-300 underline text-xs">✖ إلغاء الفلتر</button>';
@@ -117,9 +191,7 @@ def create_daily_html(repos):
 
             function resetFilter() {{
                 let cards = document.querySelectorAll('.repo-card');
-                cards.forEach(function(card) {{
-                    card.style.display = 'block';
-                }});
+                cards.forEach(card => card.style.display = 'block');
                 document.getElementById('filter-status').innerHTML = '';
             }}
         </script>
@@ -128,8 +200,7 @@ def create_daily_html(repos):
     """
     return html
 
-
-# --- 4. بناء واجهة الهبوط (كما هي دون تغيير) ---
+# --- 4. بناء واجهة الهبوط ---
 def update_root_index():
     print("🌐 تحديث واجهة الهبوط التعريفية...")
     reports = []
@@ -140,7 +211,7 @@ def update_root_index():
                 date_str = f"{p[1]}-{p[2]}-{p[3]}"
                 reports.append({"date": date_str, "path": f"{root}/index.html"})
 
-    reports.sort(key=lambda x: x["date"], reverse=True)
+    reports.sort(key=lambda x: x['date'], reverse=True)
 
     root_html = f"""
     <!DOCTYPE html>
@@ -161,19 +232,12 @@ def update_root_index():
                 <div class="bg-slate-900/50 border border-slate-800 rounded-3xl p-8 backdrop-blur-sm">
                     <h2 class="text-xl font-bold text-white mb-6 border-r-4 border-emerald-500 pr-4">سجل الأرشفة اليومي</h2>
                     <div class="space-y-3">
-                        {
-        "".join(
-            [
-                f'''
+                        {"".join([f'''
                         <a href="{r['path']}" class="group flex items-center justify-between p-4 rounded-xl border border-slate-800 hover:border-emerald-500/50 transition-all">
                             <span class="text-slate-300 group-hover:text-emerald-400 font-medium">📅 تقرير يوم {r['date']}</span>
                             <span class="text-slate-600 group-hover:text-emerald-400 group-hover:translate-x-[-5px] transition-all">←</span>
                         </a>
-                        '''
-                for r in reports
-            ]
-        )
-    }
+                        ''' for r in reports])}
                     </div>
                 </div>
             </div>
@@ -183,7 +247,6 @@ def update_root_index():
     """
     with open("index.html", "w", encoding="utf-8") as f:
         f.write(root_html)
-
 
 # --- 5. تشغيل المحرك ---
 if __name__ == "__main__":
