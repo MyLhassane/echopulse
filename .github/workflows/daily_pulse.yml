@@ -2,9 +2,9 @@ name: Daily EchoPulse Radar
 
 on:
   schedule:
-    # يعمل يومياً في الساعة 00:00 بتوقيت جرينتش
-    - cron: "0 0 * * *"
-  workflow_dispatch: # يسمح لك بتشغيله يدوياً للتجربة
+    # سيتم التشغيل الساعة 04:40 صباحاً بتوقيت جرينتش (UTC)
+    - cron: "40 4 * * *"
+  workflow_dispatch: # للتشغيل اليدوي الفوري
 
 jobs:
   build:
@@ -21,11 +21,13 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install -r 005.echopulse/requirements.txt
+          # تأكد أن اسم المجلد هنا يطابق الاسم الجديد تماماً (بدون 005.)
+          pip install -r echopulse/requirements.txt
 
       - name: Run EchoPulse Script
         run: |
-          python 005.echopulse/main.py
+          # تأكد من تحديث المسار هنا أيضاً
+          python echopulse/main.py
 
       - name: Commit and Push changes
         run: |
