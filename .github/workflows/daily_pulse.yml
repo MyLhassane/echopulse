@@ -4,7 +4,7 @@ on:
   schedule:
     # سيتم التشغيل الساعة 04:40 صباحاً بتوقيت جرينتش (UTC)
     - cron: "40 4 * * *"
-  workflow_dispatch: # للتشغيل اليدوي الفوري
+  workflow_dispatch:
 
 jobs:
   build:
@@ -21,13 +21,13 @@ jobs:
 
       - name: Install dependencies
         run: |
-          # تأكد أن اسم المجلد هنا يطابق الاسم الجديد تماماً (بدون 005.)
-          pip install -r echopulse/requirements.txt
+          # بما أن الملف في الجذر، ننادي عليه مباشرة
+          pip install -r requirements.txt
 
       - name: Run EchoPulse Script
         run: |
-          # تأكد من تحديث المسار هنا أيضاً
-          python echopulse/main.py
+          # تشغيل السكريبت من الجذر مباشرة
+          python main.py
 
       - name: Commit and Push changes
         run: |
