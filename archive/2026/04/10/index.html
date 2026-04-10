@@ -1,0 +1,420 @@
+
+    <!DOCTYPE html>
+    <html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>EchoPulse | حصاد 10-04-2026</title>
+    </head>
+    <body class="bg-[#0f172a] text-slate-200 p-6 md:p-12">
+        <div class="max-w-5xl mx-auto">
+            <header class="flex justify-between items-center mb-6 border-b border-slate-800 pb-6">
+                <div>
+                    <a href="../../../../index.html" class="text-emerald-400 hover:underline text-sm">← الفهرس الرئيسي</a>
+                    <h1 class="text-3xl font-black text-white mt-2">نبض التقنية <span class="text-emerald-500">10.04.2026</span></h1>
+                </div>
+                <div class="flex flex-col items-end gap-3">
+                    <span class="block text-xs text-slate-500">تم الرصد بواسطة <span class="font-mono text-emerald-400">EchoPulse_Bot</span></span>
+
+                    <button onclick="toggleFavoritesView()" id="fav-view-btn" class="bg-slate-800 hover:bg-slate-700 text-sm px-4 py-2 rounded-lg border border-slate-700 transition-colors flex items-center gap-2">
+                        <span>⭐</span> عرض مفضلتي
+                    </button>
+                </div>
+            </header>
+
+            <div id="filter-status" class="mb-6 h-8 flex items-center text-sm font-bold text-emerald-300"></div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="repos-container">
+                
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="ai,chromadb,llm,mcp,memory,python" data-repo-id="1201656210">
+
+            <button onclick="toggleBookmark('1201656210')" id="star-1201656210" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">mempalace</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 38037</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">The highest-scoring AI memory system ever benchmarked. And it's free.</p>
+
+            <div class="mt-4 flex flex-wrap">
+                <button onclick="filterByTag('ai')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#ai</button><button onclick="filterByTag('chromadb')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#chromadb</button><button onclick="filterByTag('llm')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#llm</button><button onclick="filterByTag('mcp')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#mcp</button><button onclick="filterByTag('memory')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#memory</button><button onclick="filterByTag('python')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#python</button>
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">Python</span>
+                <a href="https://github.com/milla-jovovich/mempalace" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="ai-agent,anthropic,automation,career,claude,claude-code,cli,golang,interview-prep,job-search,open-source,resume" data-repo-id="1201476594">
+
+            <button onclick="toggleBookmark('1201476594')" id="star-1201476594" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">career-ops</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 28306</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">AI-powered job search system built on Claude Code. 14 skill modes, Go dashboard, PDF generation, batch processing.</p>
+
+            <div class="mt-4 flex flex-wrap">
+                <button onclick="filterByTag('ai-agent')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#ai-agent</button><button onclick="filterByTag('anthropic')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#anthropic</button><button onclick="filterByTag('automation')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#automation</button><button onclick="filterByTag('career')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#career</button><button onclick="filterByTag('claude')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#claude</button><button onclick="filterByTag('claude-code')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#claude-code</button>
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">JavaScript</span>
+                <a href="https://github.com/santifer/career-ops" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="ai,anthropic,caveman,claude,claude-code,llm,meme,prompt-engineering,skill,tokens" data-repo-id="1201173969">
+
+            <button onclick="toggleBookmark('1201173969')" id="star-1201173969" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">caveman</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 9522</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman</p>
+
+            <div class="mt-4 flex flex-wrap">
+                <button onclick="filterByTag('ai')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#ai</button><button onclick="filterByTag('anthropic')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#anthropic</button><button onclick="filterByTag('caveman')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#caveman</button><button onclick="filterByTag('claude')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#claude</button><button onclick="filterByTag('claude-code')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#claude-code</button><button onclick="filterByTag('llm')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#llm</button>
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">Python</span>
+                <a href="https://github.com/JuliusBrussee/caveman" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="" data-repo-id="1201730379">
+
+            <button onclick="toggleBookmark('1201730379')" id="star-1201730379" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">nuwa-skill</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 6176</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">你想蒸馏的下一个员工，何必是同事。蒸馏任何人的思维方式——心智模型、决策启发式、表达DNA。Distill how anyone thinks.</p>
+
+            <div class="mt-4 flex flex-wrap">
+                
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">Python</span>
+                <a href="https://github.com/alchaincyf/nuwa-skill" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="" data-repo-id="1203503423">
+
+            <button onclick="toggleBookmark('1203503423')" id="star-1203503423" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">clicky</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 3332</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">لا يوجد وصف من المصدر.</p>
+
+            <div class="mt-4 flex flex-wrap">
+                
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">Swift</span>
+                <a href="https://github.com/farzaa/clicky" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="" data-repo-id="1201947430">
+
+            <button onclick="toggleBookmark('1201947430')" id="star-1201947430" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">zhangxuefeng-skill</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 2738</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">张雪峰.skill — 张雪峰的认知操作系统。高考志愿/考研/职业规划的实战思维框架。由女娲.skill生成。</p>
+
+            <div class="mt-4 flex flex-wrap">
+                
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">Mixed</span>
+                <a href="https://github.com/alchaincyf/zhangxuefeng-skill" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="agent-skills,awesome,awesome-list,persona-distill" data-repo-id="1203185600">
+
+            <button onclick="toggleBookmark('1203185600')" id="star-1203185600" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">awesome-persona-distill-skills</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 2351</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">同事.skill、前任.skill、女娲.skill、自己.skill、乔布斯.skill……</p>
+
+            <div class="mt-4 flex flex-wrap">
+                <button onclick="filterByTag('agent-skills')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#agent-skills</button><button onclick="filterByTag('awesome')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#awesome</button><button onclick="filterByTag('awesome-list')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#awesome-list</button><button onclick="filterByTag('persona-distill')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#persona-distill</button>
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">JavaScript</span>
+                <a href="https://github.com/xixu-me/awesome-persona-distill-skills" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="" data-repo-id="1201093350">
+
+            <button onclick="toggleBookmark('1201093350')" id="star-1201093350" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">badclaude</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 1845</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">لا يوجد وصف من المصدر.</p>
+
+            <div class="mt-4 flex flex-wrap">
+                
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">HTML</span>
+                <a href="https://github.com/GitFrog1111/badclaude" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="" data-repo-id="1202209457">
+
+            <button onclick="toggleBookmark('1202209457')" id="star-1202209457" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">tailslayer</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 1759</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">Library for reducing tail latency in RAM reads</p>
+
+            <div class="mt-4 flex flex-wrap">
+                
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">C++</span>
+                <a href="https://github.com/LaurieWired/tailslayer" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="" data-repo-id="1202158137">
+
+            <button onclick="toggleBookmark('1202158137')" id="star-1202158137" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">tong-jincheng-skill</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 1479</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">童锦程视角 Skill — 用深情祖师爷的思维框架分析人际关系</p>
+
+            <div class="mt-4 flex flex-wrap">
+                
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">Mixed</span>
+                <a href="https://github.com/hotcoffeeshake/tong-jincheng-skill" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="" data-repo-id="1202599845">
+
+            <button onclick="toggleBookmark('1202599845')" id="star-1202599845" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">khazix-skills</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 1377</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">数字生命卡兹克开源的 AI Skills 合集</p>
+
+            <div class="mt-4 flex flex-wrap">
+                
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">Mixed</span>
+                <a href="https://github.com/KKKKhazix/khazix-skills" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="3d-printing,cad,gaming,gaming-keyboard,gaming-mouse,hardware-designs,keyboard,keyboard-firmware,keychron,mechanical-keyboard,mouse,qmk,qmk-firmware,zephyr,zmk,zmk-firmware" data-repo-id="1200994191">
+
+            <button onclick="toggleBookmark('1200994191')" id="star-1200994191" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">Keychron-Keyboards-Hardware-Design</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 1368</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">All the industrial design files for Keychron keyboards and mice. Includes CAD models (case, plate, stabilizer, encoder, keycap) for Q, Q Pro, Q HE, K Pro, K Max, K HE, V Max, P HE series and M1–M7 mice. 100+ models. STEP/DXF/PDF formats. This project is source-available. Commercial use is strictly prohibited.</p>
+
+            <div class="mt-4 flex flex-wrap">
+                <button onclick="filterByTag('3d-printing')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#3d-printing</button><button onclick="filterByTag('cad')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#cad</button><button onclick="filterByTag('gaming')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#gaming</button><button onclick="filterByTag('gaming-keyboard')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#gaming-keyboard</button><button onclick="filterByTag('gaming-mouse')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#gaming-mouse</button><button onclick="filterByTag('hardware-designs')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#hardware-designs</button>
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">Python</span>
+                <a href="https://github.com/Keychron/Keychron-Keyboards-Hardware-Design" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+            </div>
+        </div>
+
+        <script>
+            // --- 1. نظام المفضلة (Local Storage) ---
+            function getFavs() {
+                return JSON.parse(localStorage.getItem('echopulse_favs') || '[]');
+            }
+
+            function saveFavs(favs) {
+                localStorage.setItem('echopulse_favs', JSON.stringify(favs));
+            }
+
+            function toggleBookmark(id) {
+                let favs = getFavs();
+                let index = favs.indexOf(String(id));
+                let btn = document.getElementById('star-' + id);
+
+                if (index === -1) {
+                    favs.push(String(id)); // إضافة
+                    btn.innerHTML = '★';
+                    btn.classList.add('text-yellow-400');
+                    btn.classList.remove('text-slate-600');
+                } else {
+                    favs.splice(index, 1); // إزالة
+                    btn.innerHTML = '☆';
+                    btn.classList.remove('text-yellow-400');
+                    btn.classList.add('text-slate-600');
+                }
+                saveFavs(favs);
+            }
+
+            // تلوين النجوم عند تحميل الصفحة للمشاريع المحفوظة مسبقاً
+            document.addEventListener('DOMContentLoaded', () => {
+                let favs = getFavs();
+                favs.forEach(id => {
+                    let btn = document.getElementById('star-' + id);
+                    if (btn) {
+                        btn.innerHTML = '★';
+                        btn.classList.add('text-yellow-400');
+                        btn.classList.remove('text-slate-600');
+                    }
+                });
+            });
+
+            // --- 2. نظام العرض (الفلاتر) ---
+            let showingFavsOnly = false;
+
+            function toggleFavoritesView() {
+                showingFavsOnly = !showingFavsOnly;
+                let favs = getFavs();
+                let cards = document.querySelectorAll('.repo-card');
+                let btn = document.getElementById('fav-view-btn');
+
+                if (showingFavsOnly) {
+                    btn.innerHTML = '🔙 العودة للكل';
+                    btn.classList.add('bg-yellow-500/20', 'border-yellow-500/50');
+                    let count = 0;
+                    cards.forEach(card => {
+                        let id = card.getAttribute('data-repo-id');
+                        if (favs.includes(id)) {
+                            card.style.display = 'block';
+                            count++;
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                    document.getElementById('filter-status').innerHTML = 'تصفية حسب: <span class="bg-yellow-500/20 text-yellow-400 px-2 py-1 rounded mx-2">⭐ المفضلة</span> (' + count + ' نتائج)';
+                } else {
+                    btn.innerHTML = '<span>⭐</span> عرض مفضلتي';
+                    btn.classList.remove('bg-yellow-500/20', 'border-yellow-500/50');
+                    resetFilter();
+                }
+            }
+
+            function filterByTag(tag) {
+                if(showingFavsOnly) toggleFavoritesView(); // إلغاء وضع المفضلة إذا تم اختيار وسم
+
+                let cards = document.querySelectorAll('.repo-card');
+                let count = 0;
+                cards.forEach(card => {
+                    let tags = card.getAttribute('data-topics').split(',');
+                    if (tags.includes(tag)) {
+                        card.style.display = 'block';
+                        count++;
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+
+                document.getElementById('filter-status').innerHTML =
+                    'تصفية حسب: <span class="bg-emerald-500/20 px-2 py-1 rounded mx-2">#' + tag + '</span> (' + count + ' نتائج) ' +
+                    '<button onclick="resetFilter()" class="mr-4 text-red-400 hover:text-red-300 underline text-xs">✖ إلغاء الفلتر</button>';
+            }
+
+            function resetFilter() {
+                let cards = document.querySelectorAll('.repo-card');
+                cards.forEach(card => card.style.display = 'block');
+                document.getElementById('filter-status').innerHTML = '';
+            }
+        </script>
+    </body>
+    </html>
+    
