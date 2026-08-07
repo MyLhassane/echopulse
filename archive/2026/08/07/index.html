@@ -1,0 +1,420 @@
+
+    <!DOCTYPE html>
+    <html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>EchoPulse | حصاد 07-08-2026</title>
+    </head>
+    <body class="bg-[#0f172a] text-slate-200 p-6 md:p-12">
+        <div class="max-w-5xl mx-auto">
+            <header class="flex justify-between items-center mb-6 border-b border-slate-800 pb-6">
+                <div>
+                    <a href="../../../../index.html" class="text-emerald-400 hover:underline text-sm">← الفهرس الرئيسي</a>
+                    <h1 class="text-3xl font-black text-white mt-2">نبض التقنية <span class="text-emerald-500">07.08.2026</span></h1>
+                </div>
+                <div class="flex flex-col items-end gap-3">
+                    <span class="block text-xs text-slate-500">تم الرصد بواسطة <span class="font-mono text-emerald-400">EchoPulse_Bot</span></span>
+
+                    <button onclick="toggleFavoritesView()" id="fav-view-btn" class="bg-slate-800 hover:bg-slate-700 text-sm px-4 py-2 rounded-lg border border-slate-700 transition-colors flex items-center gap-2">
+                        <span>⭐</span> عرض مفضلتي
+                    </button>
+                </div>
+            </header>
+
+            <div id="filter-status" class="mb-6 h-8 flex items-center text-sm font-bold text-emerald-300"></div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="repos-container">
+                
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="" data-repo-id="1322012299">
+
+            <button onclick="toggleBookmark('1322012299')" id="star-1322012299" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">anydoc</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 9544</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">Convert Word, PowerPoint, Excel, OpenDocument, RTF, EPUB, CSV, and PDF to clean Markdown. Built in Rust, with Node.js and Python bindings.</p>
+
+            <div class="mt-4 flex flex-wrap">
+                
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">Rust</span>
+                <a href="https://github.com/firecrawl/anydoc" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="avx2,c99,cpu-inference,deep-learning,from-scratch,inference-engine,kimi-k3,linear-attention,llm,llm-inference,machine-learning,memory-efficient,mixture-of-experts,moe,mxfp4,quantization,simd,systems-programming,transformer,zero-dependencies" data-repo-id="1319154759">
+
+            <button onclick="toggleBookmark('1319154759')" id="star-1319154759" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">kimi-k3-in-c</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 2954</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">A 2.78-trillion-parameter Kimi K3 running inference on a single CPU in 8.24 GB of RAM. Portable C99: no BLAS, no framework, no GPU.</p>
+
+            <div class="mt-4 flex flex-wrap">
+                <button onclick="filterByTag('avx2')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#avx2</button><button onclick="filterByTag('c99')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#c99</button><button onclick="filterByTag('cpu-inference')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#cpu-inference</button><button onclick="filterByTag('deep-learning')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#deep-learning</button><button onclick="filterByTag('from-scratch')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#from-scratch</button><button onclick="filterByTag('inference-engine')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#inference-engine</button>
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">C</span>
+                <a href="https://github.com/FareedKhan-dev/kimi-k3-in-c" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="" data-repo-id="1319484586">
+
+            <button onclick="toggleBookmark('1319484586')" id="star-1319484586" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">zhuzhiliao</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 2360</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">竹知了 —— 一转就哇哇叫的传统玩具，Web 模拟版。零依赖单文件，真实录音采样，移动端优先。</p>
+
+            <div class="mt-4 flex flex-wrap">
+                
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">HTML</span>
+                <a href="https://github.com/imsai-sh/zhuzhiliao" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="" data-repo-id="1320101490">
+
+            <button onclick="toggleBookmark('1320101490')" id="star-1320101490" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">anatomy</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 1915</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">An interactive 3D human anatomy explorer built using threejs with GPT 5.6 Sol</p>
+
+            <div class="mt-4 flex flex-wrap">
+                
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">TypeScript</span>
+                <a href="https://github.com/thebuggeddev/anatomy" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="agent-skills,chinese-writing,creative-writing,writing-skill" data-repo-id="1323511527">
+
+            <button onclick="toggleBookmark('1323511527')" id="star-1323511527" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">human-writing</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 1761</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">让 AI 写的中文读起来像一个具体的人在说话。通用创作与改稿 Skill，开箱即用。</p>
+
+            <div class="mt-4 flex flex-wrap">
+                <button onclick="filterByTag('agent-skills')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#agent-skills</button><button onclick="filterByTag('chinese-writing')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#chinese-writing</button><button onclick="filterByTag('creative-writing')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#creative-writing</button><button onclick="filterByTag('writing-skill')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#writing-skill</button>
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">Python</span>
+                <a href="https://github.com/KKKKhazix/human-writing" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="" data-repo-id="1319336961">
+
+            <button onclick="toggleBookmark('1319336961')" id="star-1319336961" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">sol-advisor</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 1739</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">Codex-native architect orchestration with Luna and Terra implementation lanes and mandatory fresh Sol review.</p>
+
+            <div class="mt-4 flex flex-wrap">
+                
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">Shell</span>
+                <a href="https://github.com/DannyMac180/sol-advisor" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="" data-repo-id="1323763720">
+
+            <button onclick="toggleBookmark('1323763720')" id="star-1323763720" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">open-kimi-ppt-skill</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 1578</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">非官方 Kimi Slides Skill：让 AI Agent 生成可编辑 PPTD + PPTX，并附带本地浏览器编辑器 Unofficial Kimi Slides skill for AI agents — generate editable PPTD + PPTX with a local browser editor</p>
+
+            <div class="mt-4 flex flex-wrap">
+                
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">Mixed</span>
+                <a href="https://github.com/Binaryify/open-kimi-ppt-skill" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="" data-repo-id="1322768766">
+
+            <button onclick="toggleBookmark('1322768766')" id="star-1322768766" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">photo-abstract-editorial</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 1290</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">لا يوجد وصف من المصدر.</p>
+
+            <div class="mt-4 flex flex-wrap">
+                
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">Mixed</span>
+                <a href="https://github.com/ZzzLc0405/photo-abstract-editorial" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="" data-repo-id="1319855210">
+
+            <button onclick="toggleBookmark('1319855210')" id="star-1319855210" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">RealReplicaBench</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 1038</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">RealReplicaBench: Benchmarking Long-Horizon Agents in High-Fidelity, Stateful, and Reproducible Replicas of Real Online Services</p>
+
+            <div class="mt-4 flex flex-wrap">
+                
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">HTML</span>
+                <a href="https://github.com/Accio-org/RealReplicaBench" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="" data-repo-id="1319280427">
+
+            <button onclick="toggleBookmark('1319280427')" id="star-1319280427" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">3x-ui-multi</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 888</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">لا يوجد وصف من المصدر.</p>
+
+            <div class="mt-4 flex flex-wrap">
+                
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">JavaScript</span>
+                <a href="https://github.com/x4gKing/3x-ui-multi" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="animation,icons,morphing,react,svg,typescript" data-repo-id="1319103484">
+
+            <button onclick="toggleBookmark('1319103484')" id="star-1319103484" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">morphicons</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 824</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">Any icon morphs into any other — universal morphing for stroke-based icons with spring physics. Zero dependencies, ~7 KB gzip.</p>
+
+            <div class="mt-4 flex flex-wrap">
+                <button onclick="filterByTag('animation')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#animation</button><button onclick="filterByTag('icons')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#icons</button><button onclick="filterByTag('morphing')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#morphing</button><button onclick="filterByTag('react')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#react</button><button onclick="filterByTag('svg')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#svg</button><button onclick="filterByTag('typescript')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#typescript</button>
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">TypeScript</span>
+                <a href="https://github.com/guillermolg00/morphicons" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="" data-repo-id="1319419492">
+
+            <button onclick="toggleBookmark('1319419492')" id="star-1319419492" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">gathered-scenes-zine-skill</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 680</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">لا يوجد وصف من المصدر.</p>
+
+            <div class="mt-4 flex flex-wrap">
+                
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">Mixed</span>
+                <a href="https://github.com/Zeejay0/gathered-scenes-zine-skill" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+            </div>
+        </div>
+
+        <script>
+            // --- 1. نظام المفضلة (Local Storage) ---
+            function getFavs() {
+                return JSON.parse(localStorage.getItem('echopulse_favs') || '[]');
+            }
+
+            function saveFavs(favs) {
+                localStorage.setItem('echopulse_favs', JSON.stringify(favs));
+            }
+
+            function toggleBookmark(id) {
+                let favs = getFavs();
+                let index = favs.indexOf(String(id));
+                let btn = document.getElementById('star-' + id);
+
+                if (index === -1) {
+                    favs.push(String(id)); // إضافة
+                    btn.innerHTML = '★';
+                    btn.classList.add('text-yellow-400');
+                    btn.classList.remove('text-slate-600');
+                } else {
+                    favs.splice(index, 1); // إزالة
+                    btn.innerHTML = '☆';
+                    btn.classList.remove('text-yellow-400');
+                    btn.classList.add('text-slate-600');
+                }
+                saveFavs(favs);
+            }
+
+            // تلوين النجوم عند تحميل الصفحة للمشاريع المحفوظة مسبقاً
+            document.addEventListener('DOMContentLoaded', () => {
+                let favs = getFavs();
+                favs.forEach(id => {
+                    let btn = document.getElementById('star-' + id);
+                    if (btn) {
+                        btn.innerHTML = '★';
+                        btn.classList.add('text-yellow-400');
+                        btn.classList.remove('text-slate-600');
+                    }
+                });
+            });
+
+            // --- 2. نظام العرض (الفلاتر) ---
+            let showingFavsOnly = false;
+
+            function toggleFavoritesView() {
+                showingFavsOnly = !showingFavsOnly;
+                let favs = getFavs();
+                let cards = document.querySelectorAll('.repo-card');
+                let btn = document.getElementById('fav-view-btn');
+
+                if (showingFavsOnly) {
+                    btn.innerHTML = '🔙 العودة للكل';
+                    btn.classList.add('bg-yellow-500/20', 'border-yellow-500/50');
+                    let count = 0;
+                    cards.forEach(card => {
+                        let id = card.getAttribute('data-repo-id');
+                        if (favs.includes(id)) {
+                            card.style.display = 'block';
+                            count++;
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                    document.getElementById('filter-status').innerHTML = 'تصفية حسب: <span class="bg-yellow-500/20 text-yellow-400 px-2 py-1 rounded mx-2">⭐ المفضلة</span> (' + count + ' نتائج)';
+                } else {
+                    btn.innerHTML = '<span>⭐</span> عرض مفضلتي';
+                    btn.classList.remove('bg-yellow-500/20', 'border-yellow-500/50');
+                    resetFilter();
+                }
+            }
+
+            function filterByTag(tag) {
+                if(showingFavsOnly) toggleFavoritesView(); // إلغاء وضع المفضلة إذا تم اختيار وسم
+
+                let cards = document.querySelectorAll('.repo-card');
+                let count = 0;
+                cards.forEach(card => {
+                    let tags = card.getAttribute('data-topics').split(',');
+                    if (tags.includes(tag)) {
+                        card.style.display = 'block';
+                        count++;
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+
+                document.getElementById('filter-status').innerHTML =
+                    'تصفية حسب: <span class="bg-emerald-500/20 px-2 py-1 rounded mx-2">#' + tag + '</span> (' + count + ' نتائج) ' +
+                    '<button onclick="resetFilter()" class="mr-4 text-red-400 hover:text-red-300 underline text-xs">✖ إلغاء الفلتر</button>';
+            }
+
+            function resetFilter() {
+                let cards = document.querySelectorAll('.repo-card');
+                cards.forEach(card => card.style.display = 'block');
+                document.getElementById('filter-status').innerHTML = '';
+            }
+        </script>
+    </body>
+    </html>
+    
