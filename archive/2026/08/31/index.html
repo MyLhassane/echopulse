@@ -1,0 +1,420 @@
+
+    <!DOCTYPE html>
+    <html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>EchoPulse | حصاد 31-08-2026</title>
+    </head>
+    <body class="bg-[#0f172a] text-slate-200 p-6 md:p-12">
+        <div class="max-w-5xl mx-auto">
+            <header class="flex justify-between items-center mb-6 border-b border-slate-800 pb-6">
+                <div>
+                    <a href="../../../../index.html" class="text-emerald-400 hover:underline text-sm">← الفهرس الرئيسي</a>
+                    <h1 class="text-3xl font-black text-white mt-2">نبض التقنية <span class="text-emerald-500">31.08.2026</span></h1>
+                </div>
+                <div class="flex flex-col items-end gap-3">
+                    <span class="block text-xs text-slate-500">تم الرصد بواسطة <span class="font-mono text-emerald-400">EchoPulse_Bot</span></span>
+
+                    <button onclick="toggleFavoritesView()" id="fav-view-btn" class="bg-slate-800 hover:bg-slate-700 text-sm px-4 py-2 rounded-lg border border-slate-700 transition-colors flex items-center gap-2">
+                        <span>⭐</span> عرض مفضلتي
+                    </button>
+                </div>
+            </header>
+
+            <div id="filter-status" class="mb-6 h-8 flex items-center text-sm font-bold text-emerald-300"></div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="repos-container">
+                
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="" data-repo-id="1348577064">
+
+            <button onclick="toggleBookmark('1348577064')" id="star-1348577064" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">PRAXIST</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 5430</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">Autonomous research system for measurable, computer-executable research.</p>
+
+            <div class="mt-4 flex flex-wrap">
+                
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">Python</span>
+                <a href="https://github.com/sapientinc/PRAXIST" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="" data-repo-id="1348410551">
+
+            <button onclick="toggleBookmark('1348410551')" id="star-1348410551" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">my-girlfriend-jingtian-latex</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 4183</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">لا يوجد وصف من المصدر.</p>
+
+            <div class="mt-4 flex flex-wrap">
+                
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">TeX</span>
+                <a href="https://github.com/HEJustinSun/my-girlfriend-jingtian-latex" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="ai-agents,chatgpt,codex,mcp,model-context-protocol,oauth" data-repo-id="1349601607">
+
+            <button onclick="toggleBookmark('1349601607')" id="star-1349601607" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">codex-with-chatgpt</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 1727</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">ChatGPT thinks. Codex works. Use ChatGPT as the planning brain while keeping the Codex harness.</p>
+
+            <div class="mt-4 flex flex-wrap">
+                <button onclick="filterByTag('ai-agents')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#ai-agents</button><button onclick="filterByTag('chatgpt')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#chatgpt</button><button onclick="filterByTag('codex')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#codex</button><button onclick="filterByTag('mcp')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#mcp</button><button onclick="filterByTag('model-context-protocol')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#model-context-protocol</button><button onclick="filterByTag('oauth')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#oauth</button>
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">TypeScript</span>
+                <a href="https://github.com/XiaoDuoYa/codex-with-chatgpt" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="bitcoin,bitcoin-wallet,crypto,cryptocoins,cryptocompare-api,cryptocurrency,dapp,ethereum,ethereum-blockchain,ethereum-wallet,evm,evm-wallet,macos,metamask,metamask-dapp,metamask-desktop,metamask-io,solana,web3,windows" data-repo-id="1349354292">
+
+            <button onclick="toggleBookmark('1349354292')" id="star-1349354292" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">metamask-desktop</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 1228</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">🌐 🔌 The MetaMask desktop app enables browsing Ethereum blockchain enabled websites</p>
+
+            <div class="mt-4 flex flex-wrap">
+                <button onclick="filterByTag('bitcoin')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#bitcoin</button><button onclick="filterByTag('bitcoin-wallet')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#bitcoin-wallet</button><button onclick="filterByTag('crypto')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#crypto</button><button onclick="filterByTag('cryptocoins')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#cryptocoins</button><button onclick="filterByTag('cryptocompare-api')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#cryptocompare-api</button><button onclick="filterByTag('cryptocurrency')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#cryptocurrency</button>
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">CSS</span>
+                <a href="https://github.com/MetaMask-AI/metamask-desktop" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="agent-skills,ai-writing,antigravity,claude-code,codex,developer-tools,fiction,grok,humanizer,llm,prompt-engineering,writing-tools" data-repo-id="1349253750">
+
+            <button onclick="toggleBookmark('1349253750')" id="star-1349253750" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">sepia</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 1176</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">De-AI writing skill for any Agent Skills-compatible agent (77+ via the Skills CLI), with native plugins for Claude Code, Codex, Grok Build, and Antigravity. Narrative-architecture repair for fiction, venue-matched rules for professional prose. Based on StoryScope (arXiv:2604.03136).</p>
+
+            <div class="mt-4 flex flex-wrap">
+                <button onclick="filterByTag('agent-skills')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#agent-skills</button><button onclick="filterByTag('ai-writing')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#ai-writing</button><button onclick="filterByTag('antigravity')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#antigravity</button><button onclick="filterByTag('claude-code')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#claude-code</button><button onclick="filterByTag('codex')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#codex</button><button onclick="filterByTag('developer-tools')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#developer-tools</button>
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">Mixed</span>
+                <a href="https://github.com/Nanako0129/sepia" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="" data-repo-id="1346970181">
+
+            <button onclick="toggleBookmark('1346970181')" id="star-1346970181" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">open-higgsfield</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 1129</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">A studio for image and video generation — one prompt bar, each model’s own settings, and every finished run in one gallery.</p>
+
+            <div class="mt-4 flex flex-wrap">
+                
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">TypeScript</span>
+                <a href="https://github.com/wide-trace/open-higgsfield" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="embedding-models,multimodal,multimodal-llm" data-repo-id="1345606017">
+
+            <button onclick="toggleBookmark('1345606017')" id="star-1345606017" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">WeMM-Embedding</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 993</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">WeMM-Embedding is a family of universal multimodal embedding models by the WeChat Vision Team at Tencent, supporting multimodal understanding and retrieval.</p>
+
+            <div class="mt-4 flex flex-wrap">
+                <button onclick="filterByTag('embedding-models')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#embedding-models</button><button onclick="filterByTag('multimodal')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#multimodal</button><button onclick="filterByTag('multimodal-llm')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#multimodal-llm</button>
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">Python</span>
+                <a href="https://github.com/Tencent/WeMM-Embedding" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="audio-processor,auto-caption,automation,capcut,capcut-alternative,content-creation,cross-platform,desktop-app,ffmpeg,free-video-editor,non-linear-editor,offline-first,open-source-video-editor,rust-lang,tauri-app,video-editing,video-editing-software,video-processing-tool,whisper-cpp" data-repo-id="1346499044">
+
+            <button onclick="toggleBookmark('1346499044')" id="star-1346499044" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">Concat</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 841</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">Free & Open-Source CapCut replacement.</p>
+
+            <div class="mt-4 flex flex-wrap">
+                <button onclick="filterByTag('audio-processor')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#audio-processor</button><button onclick="filterByTag('auto-caption')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#auto-caption</button><button onclick="filterByTag('automation')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#automation</button><button onclick="filterByTag('capcut')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#capcut</button><button onclick="filterByTag('capcut-alternative')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#capcut-alternative</button><button onclick="filterByTag('content-creation')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#content-creation</button>
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">TypeScript</span>
+                <a href="https://github.com/jub0t/Concat" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="" data-repo-id="1348796050">
+
+            <button onclick="toggleBookmark('1348796050')" id="star-1348796050" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">shulihuazixuecongshu</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 823</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">لا يوجد وصف من المصدر.</p>
+
+            <div class="mt-4 flex flex-wrap">
+                
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">Python</span>
+                <a href="https://github.com/tradecatlabs/shulihuazixuecongshu" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="agent-marketplace,claude-code,claude-code-plugin,claude-plugin,claude-skills,mcp" data-repo-id="1349898907">
+
+            <button onclick="toggleBookmark('1349898907')" id="star-1349898907" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">headcount</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 794</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">An agent organization for Claude Code, structured as a company — 15+ departments, 125+ skills, each independently installable.</p>
+
+            <div class="mt-4 flex flex-wrap">
+                <button onclick="filterByTag('agent-marketplace')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#agent-marketplace</button><button onclick="filterByTag('claude-code')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#claude-code</button><button onclick="filterByTag('claude-code-plugin')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#claude-code-plugin</button><button onclick="filterByTag('claude-plugin')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#claude-plugin</button><button onclick="filterByTag('claude-skills')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#claude-skills</button><button onclick="filterByTag('mcp')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#mcp</button>
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">Markdown</span>
+                <a href="https://github.com/cbrock84/headcount" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="audio,cross-platform,desktop-app,egui,gui,librespot,linux,macos,mpris,music,music-player,rust,spotify,spotify-client,spotify-connect,windows" data-repo-id="1348483831">
+
+            <button onclick="toggleBookmark('1348483831')" id="star-1348483831" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">fastpotify</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 689</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">Spotify, native and fast. One lightweight Rust app for your whole library, local playback, and Spotify Connect on Linux, macOS, and Windows.</p>
+
+            <div class="mt-4 flex flex-wrap">
+                <button onclick="filterByTag('audio')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#audio</button><button onclick="filterByTag('cross-platform')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#cross-platform</button><button onclick="filterByTag('desktop-app')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#desktop-app</button><button onclick="filterByTag('egui')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#egui</button><button onclick="filterByTag('gui')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#gui</button><button onclick="filterByTag('librespot')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#librespot</button>
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">Rust</span>
+                <a href="https://github.com/crmne/fastpotify" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="" data-repo-id="1348995029">
+
+            <button onclick="toggleBookmark('1348995029')" id="star-1348995029" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">darwin-vm</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 665</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">Run iOS/ macOS in Qemu. Virtual iPhone 17, 16, 15, 14, 13, 12 and M5-M1 Apple Si Macs supported.</p>
+
+            <div class="mt-4 flex flex-wrap">
+                
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">Python</span>
+                <a href="https://github.com/jprx/darwin-vm" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+            </div>
+        </div>
+
+        <script>
+            // --- 1. نظام المفضلة (Local Storage) ---
+            function getFavs() {
+                return JSON.parse(localStorage.getItem('echopulse_favs') || '[]');
+            }
+
+            function saveFavs(favs) {
+                localStorage.setItem('echopulse_favs', JSON.stringify(favs));
+            }
+
+            function toggleBookmark(id) {
+                let favs = getFavs();
+                let index = favs.indexOf(String(id));
+                let btn = document.getElementById('star-' + id);
+
+                if (index === -1) {
+                    favs.push(String(id)); // إضافة
+                    btn.innerHTML = '★';
+                    btn.classList.add('text-yellow-400');
+                    btn.classList.remove('text-slate-600');
+                } else {
+                    favs.splice(index, 1); // إزالة
+                    btn.innerHTML = '☆';
+                    btn.classList.remove('text-yellow-400');
+                    btn.classList.add('text-slate-600');
+                }
+                saveFavs(favs);
+            }
+
+            // تلوين النجوم عند تحميل الصفحة للمشاريع المحفوظة مسبقاً
+            document.addEventListener('DOMContentLoaded', () => {
+                let favs = getFavs();
+                favs.forEach(id => {
+                    let btn = document.getElementById('star-' + id);
+                    if (btn) {
+                        btn.innerHTML = '★';
+                        btn.classList.add('text-yellow-400');
+                        btn.classList.remove('text-slate-600');
+                    }
+                });
+            });
+
+            // --- 2. نظام العرض (الفلاتر) ---
+            let showingFavsOnly = false;
+
+            function toggleFavoritesView() {
+                showingFavsOnly = !showingFavsOnly;
+                let favs = getFavs();
+                let cards = document.querySelectorAll('.repo-card');
+                let btn = document.getElementById('fav-view-btn');
+
+                if (showingFavsOnly) {
+                    btn.innerHTML = '🔙 العودة للكل';
+                    btn.classList.add('bg-yellow-500/20', 'border-yellow-500/50');
+                    let count = 0;
+                    cards.forEach(card => {
+                        let id = card.getAttribute('data-repo-id');
+                        if (favs.includes(id)) {
+                            card.style.display = 'block';
+                            count++;
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                    document.getElementById('filter-status').innerHTML = 'تصفية حسب: <span class="bg-yellow-500/20 text-yellow-400 px-2 py-1 rounded mx-2">⭐ المفضلة</span> (' + count + ' نتائج)';
+                } else {
+                    btn.innerHTML = '<span>⭐</span> عرض مفضلتي';
+                    btn.classList.remove('bg-yellow-500/20', 'border-yellow-500/50');
+                    resetFilter();
+                }
+            }
+
+            function filterByTag(tag) {
+                if(showingFavsOnly) toggleFavoritesView(); // إلغاء وضع المفضلة إذا تم اختيار وسم
+
+                let cards = document.querySelectorAll('.repo-card');
+                let count = 0;
+                cards.forEach(card => {
+                    let tags = card.getAttribute('data-topics').split(',');
+                    if (tags.includes(tag)) {
+                        card.style.display = 'block';
+                        count++;
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+
+                document.getElementById('filter-status').innerHTML =
+                    'تصفية حسب: <span class="bg-emerald-500/20 px-2 py-1 rounded mx-2">#' + tag + '</span> (' + count + ' نتائج) ' +
+                    '<button onclick="resetFilter()" class="mr-4 text-red-400 hover:text-red-300 underline text-xs">✖ إلغاء الفلتر</button>';
+            }
+
+            function resetFilter() {
+                let cards = document.querySelectorAll('.repo-card');
+                cards.forEach(card => card.style.display = 'block');
+                document.getElementById('filter-status').innerHTML = '';
+            }
+        </script>
+    </body>
+    </html>
+    
