@@ -1,0 +1,420 @@
+
+    <!DOCTYPE html>
+    <html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>EchoPulse | حصاد 08-10-2026</title>
+    </head>
+    <body class="bg-[#0f172a] text-slate-200 p-6 md:p-12">
+        <div class="max-w-5xl mx-auto">
+            <header class="flex justify-between items-center mb-6 border-b border-slate-800 pb-6">
+                <div>
+                    <a href="../../../../index.html" class="text-emerald-400 hover:underline text-sm">← الفهرس الرئيسي</a>
+                    <h1 class="text-3xl font-black text-white mt-2">نبض التقنية <span class="text-emerald-500">08.10.2026</span></h1>
+                </div>
+                <div class="flex flex-col items-end gap-3">
+                    <span class="block text-xs text-slate-500">تم الرصد بواسطة <span class="font-mono text-emerald-400">EchoPulse_Bot</span></span>
+
+                    <button onclick="toggleFavoritesView()" id="fav-view-btn" class="bg-slate-800 hover:bg-slate-700 text-sm px-4 py-2 rounded-lg border border-slate-700 transition-colors flex items-center gap-2">
+                        <span>⭐</span> عرض مفضلتي
+                    </button>
+                </div>
+            </header>
+
+            <div id="filter-status" class="mb-6 h-8 flex items-center text-sm font-bold text-emerald-300"></div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="repos-container">
+                
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="" data-repo-id="1407950271">
+
+            <button onclick="toggleBookmark('1407950271')" id="star-1407950271" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">math</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 11547</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">لا يوجد وصف من المصدر.</p>
+
+            <div class="mt-4 flex flex-wrap">
+                
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">Lean</span>
+                <a href="https://github.com/openai/math" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="" data-repo-id="1406706284">
+
+            <button onclick="toggleBookmark('1406706284')" id="star-1406706284" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">huashu-art-motion</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 2308</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">艺术动画skill：35种艺术风格、9种解说语法，用代码让画动起来。</p>
+
+            <div class="mt-4 flex flex-wrap">
+                
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">JavaScript</span>
+                <a href="https://github.com/alchaincyf/huashu-art-motion" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="agent-skill,ai-agent,claude-code,claude-code-skill,claude-skill,claude-skills,cli,diagram,explainer,html,llm,ste100" data-repo-id="1401476500">
+
+            <button onclick="toggleBookmark('1401476500')" id="star-1401476500" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">answer-me-with-html</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 2306</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">Answer me with HTML — an agent skill that answers hard questions with a one-page HTML you can actually read. 让 AI Agent 用一页 HTML 回答复杂问题。</p>
+
+            <div class="mt-4 flex flex-wrap">
+                <button onclick="filterByTag('agent-skill')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#agent-skill</button><button onclick="filterByTag('ai-agent')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#ai-agent</button><button onclick="filterByTag('claude-code')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#claude-code</button><button onclick="filterByTag('claude-code-skill')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#claude-code-skill</button><button onclick="filterByTag('claude-skill')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#claude-skill</button><button onclick="filterByTag('claude-skills')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#claude-skills</button>
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">JavaScript</span>
+                <a href="https://github.com/QingYunA/answer-me-with-html" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="" data-repo-id="1402193143">
+
+            <button onclick="toggleBookmark('1402193143')" id="star-1402193143" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">muse-gadget-sdk</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 1765</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">Open source SDK to build Muse gadgets</p>
+
+            <div class="mt-4 flex flex-wrap">
+                
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">C</span>
+                <a href="https://github.com/facebookincubator/muse-gadget-sdk" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="" data-repo-id="1404266247">
+
+            <button onclick="toggleBookmark('1404266247')" id="star-1404266247" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">sales-crm</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 1649</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">لا يوجد وصف من المصدر.</p>
+
+            <div class="mt-4 flex flex-wrap">
+                
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">TypeScript</span>
+                <a href="https://github.com/kargulstudio/sales-crm" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="" data-repo-id="1401506630">
+
+            <button onclick="toggleBookmark('1401506630')" id="star-1401506630" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">x_gift_bot</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 1054</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">X Premium gift CLI and redemption site</p>
+
+            <div class="mt-4 flex flex-wrap">
+                
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">Go</span>
+                <a href="https://github.com/mizorewww/x_gift_bot" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="agent,agent-skills,app-clone,claude,claude-code,claude-skills,indie-hacker,reverse-engineering,saas" data-repo-id="1403115747">
+
+            <button onclick="toggleBookmark('1403115747')" id="star-1403115747" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">replica-skill</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 989</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">Eleven free Claude skills that clone any app: reverse-engineer it, rebuild it, test it for bugs, then fix what its users hate. Free, MIT.</p>
+
+            <div class="mt-4 flex flex-wrap">
+                <button onclick="filterByTag('agent')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#agent</button><button onclick="filterByTag('agent-skills')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#agent-skills</button><button onclick="filterByTag('app-clone')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#app-clone</button><button onclick="filterByTag('claude')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#claude</button><button onclick="filterByTag('claude-code')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#claude-code</button><button onclick="filterByTag('claude-skills')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#claude-skills</button>
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">Python</span>
+                <a href="https://github.com/Jakeschincariol/replica-skill" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="arknights,auto-chess,fan-game,nodejs,tower-defense,websocket" data-repo-id="1401457273">
+
+            <button onclick="toggleBookmark('1401457273')" id="star-1401457273" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">Stronghold-Protocol</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 983</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">明日方舟「卫戍协议：盟约」非官方同人复刻：浏览器自走棋塔防，单人或 1–4 人联机合作（非商业）</p>
+
+            <div class="mt-4 flex flex-wrap">
+                <button onclick="filterByTag('arknights')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#arknights</button><button onclick="filterByTag('auto-chess')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#auto-chess</button><button onclick="filterByTag('fan-game')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#fan-game</button><button onclick="filterByTag('nodejs')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#nodejs</button><button onclick="filterByTag('tower-defense')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#tower-defense</button><button onclick="filterByTag('websocket')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#websocket</button>
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">JavaScript</span>
+                <a href="https://github.com/sganggs/Stronghold-Protocol" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="" data-repo-id="1408099862">
+
+            <button onclick="toggleBookmark('1408099862')" id="star-1408099862" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">tendedero</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 895</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">Screenshots, hung out to dry. A tiny native macOS app that hangs every screenshot on a line at the top of your screen.</p>
+
+            <div class="mt-4 flex flex-wrap">
+                
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">Swift</span>
+                <a href="https://github.com/alejandrobujan/tendedero" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="" data-repo-id="1408557215">
+
+            <button onclick="toggleBookmark('1408557215')" id="star-1408557215" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">pt-pc</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 808</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">Native PC port of P.T. (runs from your own PS4 game files)</p>
+
+            <div class="mt-4 flex flex-wrap">
+                
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">C++</span>
+                <a href="https://github.com/LoreanXavier/pt-pc" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="" data-repo-id="1408465463">
+
+            <button onclick="toggleBookmark('1408465463')" id="star-1408465463" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">nvidia-macos-driver</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 776</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">Metal driver for NVIDIA GeForce RTX cards on macOS 15 Sequoia (Intel / OpenCore). Free, source included.</p>
+
+            <div class="mt-4 flex flex-wrap">
+                
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">Rust</span>
+                <a href="https://github.com/nullmoth/nvidia-macos-driver" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="" data-repo-id="1404743796">
+
+            <button onclick="toggleBookmark('1404743796')" id="star-1404743796" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">gdp-ts</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 757</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">لا يوجد وصف من المصدر.</p>
+
+            <div class="mt-4 flex flex-wrap">
+                
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">TypeScript</span>
+                <a href="https://github.com/rauchg/gdp-ts" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+            </div>
+        </div>
+
+        <script>
+            // --- 1. نظام المفضلة (Local Storage) ---
+            function getFavs() {
+                return JSON.parse(localStorage.getItem('echopulse_favs') || '[]');
+            }
+
+            function saveFavs(favs) {
+                localStorage.setItem('echopulse_favs', JSON.stringify(favs));
+            }
+
+            function toggleBookmark(id) {
+                let favs = getFavs();
+                let index = favs.indexOf(String(id));
+                let btn = document.getElementById('star-' + id);
+
+                if (index === -1) {
+                    favs.push(String(id)); // إضافة
+                    btn.innerHTML = '★';
+                    btn.classList.add('text-yellow-400');
+                    btn.classList.remove('text-slate-600');
+                } else {
+                    favs.splice(index, 1); // إزالة
+                    btn.innerHTML = '☆';
+                    btn.classList.remove('text-yellow-400');
+                    btn.classList.add('text-slate-600');
+                }
+                saveFavs(favs);
+            }
+
+            // تلوين النجوم عند تحميل الصفحة للمشاريع المحفوظة مسبقاً
+            document.addEventListener('DOMContentLoaded', () => {
+                let favs = getFavs();
+                favs.forEach(id => {
+                    let btn = document.getElementById('star-' + id);
+                    if (btn) {
+                        btn.innerHTML = '★';
+                        btn.classList.add('text-yellow-400');
+                        btn.classList.remove('text-slate-600');
+                    }
+                });
+            });
+
+            // --- 2. نظام العرض (الفلاتر) ---
+            let showingFavsOnly = false;
+
+            function toggleFavoritesView() {
+                showingFavsOnly = !showingFavsOnly;
+                let favs = getFavs();
+                let cards = document.querySelectorAll('.repo-card');
+                let btn = document.getElementById('fav-view-btn');
+
+                if (showingFavsOnly) {
+                    btn.innerHTML = '🔙 العودة للكل';
+                    btn.classList.add('bg-yellow-500/20', 'border-yellow-500/50');
+                    let count = 0;
+                    cards.forEach(card => {
+                        let id = card.getAttribute('data-repo-id');
+                        if (favs.includes(id)) {
+                            card.style.display = 'block';
+                            count++;
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                    document.getElementById('filter-status').innerHTML = 'تصفية حسب: <span class="bg-yellow-500/20 text-yellow-400 px-2 py-1 rounded mx-2">⭐ المفضلة</span> (' + count + ' نتائج)';
+                } else {
+                    btn.innerHTML = '<span>⭐</span> عرض مفضلتي';
+                    btn.classList.remove('bg-yellow-500/20', 'border-yellow-500/50');
+                    resetFilter();
+                }
+            }
+
+            function filterByTag(tag) {
+                if(showingFavsOnly) toggleFavoritesView(); // إلغاء وضع المفضلة إذا تم اختيار وسم
+
+                let cards = document.querySelectorAll('.repo-card');
+                let count = 0;
+                cards.forEach(card => {
+                    let tags = card.getAttribute('data-topics').split(',');
+                    if (tags.includes(tag)) {
+                        card.style.display = 'block';
+                        count++;
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+
+                document.getElementById('filter-status').innerHTML =
+                    'تصفية حسب: <span class="bg-emerald-500/20 px-2 py-1 rounded mx-2">#' + tag + '</span> (' + count + ' نتائج) ' +
+                    '<button onclick="resetFilter()" class="mr-4 text-red-400 hover:text-red-300 underline text-xs">✖ إلغاء الفلتر</button>';
+            }
+
+            function resetFilter() {
+                let cards = document.querySelectorAll('.repo-card');
+                cards.forEach(card => card.style.display = 'block');
+                document.getElementById('filter-status').innerHTML = '';
+            }
+        </script>
+    </body>
+    </html>
+    
