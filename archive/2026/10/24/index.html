@@ -1,0 +1,420 @@
+
+    <!DOCTYPE html>
+    <html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>EchoPulse | حصاد 24-10-2026</title>
+    </head>
+    <body class="bg-[#0f172a] text-slate-200 p-6 md:p-12">
+        <div class="max-w-5xl mx-auto">
+            <header class="flex justify-between items-center mb-6 border-b border-slate-800 pb-6">
+                <div>
+                    <a href="../../../../index.html" class="text-emerald-400 hover:underline text-sm">← الفهرس الرئيسي</a>
+                    <h1 class="text-3xl font-black text-white mt-2">نبض التقنية <span class="text-emerald-500">24.10.2026</span></h1>
+                </div>
+                <div class="flex flex-col items-end gap-3">
+                    <span class="block text-xs text-slate-500">تم الرصد بواسطة <span class="font-mono text-emerald-400">EchoPulse_Bot</span></span>
+
+                    <button onclick="toggleFavoritesView()" id="fav-view-btn" class="bg-slate-800 hover:bg-slate-700 text-sm px-4 py-2 rounded-lg border border-slate-700 transition-colors flex items-center gap-2">
+                        <span>⭐</span> عرض مفضلتي
+                    </button>
+                </div>
+            </header>
+
+            <div id="filter-status" class="mb-6 h-8 flex items-center text-sm font-bold text-emerald-300"></div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="repos-container">
+                
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="" data-repo-id="1426780056">
+
+            <button onclick="toggleBookmark('1426780056')" id="star-1426780056" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">aerial-tv</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 4152</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">给国产电视的一块干净桌面：参照 tvOS 设计的开源 Android TV 桌面，没有广告，开机自动接管。A tvOS-style launcher for Xiaomi, TCL and other China-market TVs.</p>
+
+            <div class="mt-4 flex flex-wrap">
+                
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">Kotlin</span>
+                <a href="https://github.com/pengchujin/aerial-tv" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="android-tv,claude-code,google-tv,home-screen,launcher,no-ads,open-source,samsung-tizen,tizen,tmdb,webos" data-repo-id="1426080579">
+
+            <button onclick="toggleBookmark('1426080579')" id="star-1426080579" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">free-my-tv</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 4094</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">A fast, ad-free home screen for Google TV, LG webOS and Samsung Tizen. One button to undo.</p>
+
+            <div class="mt-4 flex flex-wrap">
+                <button onclick="filterByTag('android-tv')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#android-tv</button><button onclick="filterByTag('claude-code')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#claude-code</button><button onclick="filterByTag('google-tv')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#google-tv</button><button onclick="filterByTag('home-screen')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#home-screen</button><button onclick="filterByTag('launcher')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#launcher</button><button onclick="filterByTag('no-ads')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#no-ads</button>
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">Java</span>
+                <a href="https://github.com/simbasjungles/free-my-tv" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="chinese,curriculum,diagnostic,edtech,education,elementary-school,english,high-school,junior-high-school,k12,knowledge-graph,math,mathematics,middle-school,open-data,primary-school" data-repo-id="1424183124">
+
+            <button onclick="toggleBookmark('1424183124')" id="star-1424183124" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">cn-math-taxonomy</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 3006</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">数学（小学到高中）、英语（三年级到高中）、初中物理的知识图谱：1644 个知识点、2403 条先修边、6723 道题，对齐课标，附自适应前置诊断。</p>
+
+            <div class="mt-4 flex flex-wrap">
+                <button onclick="filterByTag('chinese')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#chinese</button><button onclick="filterByTag('curriculum')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#curriculum</button><button onclick="filterByTag('diagnostic')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#diagnostic</button><button onclick="filterByTag('edtech')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#edtech</button><button onclick="filterByTag('education')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#education</button><button onclick="filterByTag('elementary-school')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#elementary-school</button>
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">Python</span>
+                <a href="https://github.com/xiaoyang111222/cn-math-taxonomy" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="prompt-engineering,rea,reverse-enginnering" data-repo-id="1426240325">
+
+            <button onclick="toggleBookmark('1426240325')" id="star-1426240325" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">REA-Prompts</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 1885</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">REAP - Prompts for you to use REA (Reverse Engineer Anything), get the most out of it, and clone or break down any program</p>
+
+            <div class="mt-4 flex flex-wrap">
+                <button onclick="filterByTag('prompt-engineering')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#prompt-engineering</button><button onclick="filterByTag('rea')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#rea</button><button onclick="filterByTag('reverse-enginnering')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#reverse-enginnering</button>
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">Mixed</span>
+                <a href="https://github.com/JoasASantos/REA-Prompts" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="" data-repo-id="1425429552">
+
+            <button onclick="toggleBookmark('1425429552')" id="star-1425429552" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">fairplay-decrypt</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 1815</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">Offline FairPlay App Store IPA decryption with independent key derivation</p>
+
+            <div class="mt-4 flex flex-wrap">
+                
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">C</span>
+                <a href="https://github.com/EthanArbuckle/fairplay-decrypt" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="cve-2026-109618,cve-2026-109619,detection-rules,exploit,php-exploit,php-security,php2shell,poc,rce,session-upload-progress,suricata-rules,vulnerability-research,waf-rules,wordpress-security" data-repo-id="1428058681">
+
+            <button onclick="toggleBookmark('1428058681')" id="star-1428058681" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">php2shell-poc</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 1727</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">CVE-2026-109618/109619 — 5 RCE chains + detection rules (Suricata, Sigma, ModSecurity). PHP session.upload_progress pre-auth exploit research.</p>
+
+            <div class="mt-4 flex flex-wrap">
+                <button onclick="filterByTag('cve-2026-109618')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#cve-2026-109618</button><button onclick="filterByTag('cve-2026-109619')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#cve-2026-109619</button><button onclick="filterByTag('detection-rules')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#detection-rules</button><button onclick="filterByTag('exploit')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#exploit</button><button onclick="filterByTag('php-exploit')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#php-exploit</button><button onclick="filterByTag('php-security')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#php-security</button>
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">Python</span>
+                <a href="https://github.com/ikow/php2shell-poc" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="agent-skills,animation,claude-code,codex,gsap,launch-video,motion-graphics,skills" data-repo-id="1424340323">
+
+            <button onclick="toggleBookmark('1424340323')" id="star-1424340323" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">huashu-motion</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 1569</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">让你的agent一键直出商业级产品宣传片：会作曲，能指着画面改。Commercial-grade launch films by your coding agent — point at the frame to change it.</p>
+
+            <div class="mt-4 flex flex-wrap">
+                <button onclick="filterByTag('agent-skills')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#agent-skills</button><button onclick="filterByTag('animation')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#animation</button><button onclick="filterByTag('claude-code')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#claude-code</button><button onclick="filterByTag('codex')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#codex</button><button onclick="filterByTag('gsap')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#gsap</button><button onclick="filterByTag('launch-video')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#launch-video</button>
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">JavaScript</span>
+                <a href="https://github.com/alchaincyf/huashu-motion" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="" data-repo-id="1424070461">
+
+            <button onclick="toggleBookmark('1424070461')" id="star-1424070461" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">tv-detox</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 1429</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">Make an old Android TV fast again with Claude Code or Codex: a tiny ad-free home screen plus the prompt to clean it up</p>
+
+            <div class="mt-4 flex flex-wrap">
+                
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">Java</span>
+                <a href="https://github.com/Ansub/tv-detox" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="ad-blocking,adb,android-tv,debloat,dns-filter,fire-os,fire-tv,firetv,launcher,privacy,smart-tv,telemetry" data-repo-id="1424613188">
+
+            <button onclick="toggleBookmark('1424613188')" id="star-1424613188" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">dumbtv</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 1425</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">Take the ads, tracking and clutter out of your Fire TV over ADB, no root. Every step can be undone. Comes with its own open-source home screen.</p>
+
+            <div class="mt-4 flex flex-wrap">
+                <button onclick="filterByTag('ad-blocking')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#ad-blocking</button><button onclick="filterByTag('adb')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#adb</button><button onclick="filterByTag('android-tv')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#android-tv</button><button onclick="filterByTag('debloat')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#debloat</button><button onclick="filterByTag('dns-filter')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#dns-filter</button><button onclick="filterByTag('fire-os')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#fire-os</button>
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">Java</span>
+                <a href="https://github.com/humblemuzzu/dumbtv" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="" data-repo-id="1428848843">
+
+            <button onclick="toggleBookmark('1428848843')" id="star-1428848843" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">3d-model-anything</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 1395</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">Capture iPhone LiDAR and photos, reconstruct editable Three.js rooms, and explore them in a browser.</p>
+
+            <div class="mt-4 flex flex-wrap">
+                
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">Swift</span>
+                <a href="https://github.com/wesbos/3d-model-anything" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="" data-repo-id="1428268121">
+
+            <button onclick="toggleBookmark('1428268121')" id="star-1428268121" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">php2shell-bypass-aslr-exp</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 1382</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">A php2shell exploit that requires no modifications to the official version, and does not require display_errors or limit_memory.</p>
+
+            <div class="mt-4 flex flex-wrap">
+                
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">Python</span>
+                <a href="https://github.com/9bie/php2shell-bypass-aslr-exp" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+        <div class="repo-card group bg-[#1e293b] p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all shadow-xl relative" data-topics="7z,archive,cli,crash-safe,disk-space,extract,extractor,gui,rust,tar,unzip,zip" data-repo-id="1428714039">
+
+            <button onclick="toggleBookmark('1428714039')" id="star-1428714039" class="absolute top-4 left-4 text-2xl text-slate-600 hover:text-yellow-400 transition-colors tooltip" title="حفظ في المفضلة">
+                ☆
+            </button>
+
+            <div class="flex justify-between items-start pl-8">
+                <h2 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">hatchzip</h2>
+                <div class="flex items-center gap-2">
+                    <span class="text-yellow-500 text-sm">⭐ 1367</span>
+                </div>
+            </div>
+            <p class="mt-3 text-slate-400 text-sm leading-relaxed h-12 overflow-hidden">Extract huge archives in place: the archive shrinks as your files hatch, so you only need room for the output. ZIP, 7z, tar, split archives.</p>
+
+            <div class="mt-4 flex flex-wrap">
+                <button onclick="filterByTag('7z')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#7z</button><button onclick="filterByTag('archive')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#archive</button><button onclick="filterByTag('cli')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#cli</button><button onclick="filterByTag('crash-safe')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#crash-safe</button><button onclick="filterByTag('disk-space')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#disk-space</button><button onclick="filterByTag('extract')" class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 text-[10px] px-2 py-0.5 rounded border border-emerald-500/20 mr-1 mb-1 lowercase transition-colors cursor-pointer">#extract</button>
+            </div>
+
+            <div class="mt-6 flex items-center justify-between border-t border-slate-700/50 pt-4">
+                <span class="text-xs text-slate-500 font-mono">Rust</span>
+                <a href="https://github.com/xevrion/hatchzip" target="_blank" class="text-xs bg-slate-700 hover:bg-emerald-600 text-white px-3 py-1.5 rounded-lg transition-colors">كود المصدر ↗</a>
+            </div>
+        </div>
+        
+            </div>
+        </div>
+
+        <script>
+            // --- 1. نظام المفضلة (Local Storage) ---
+            function getFavs() {
+                return JSON.parse(localStorage.getItem('echopulse_favs') || '[]');
+            }
+
+            function saveFavs(favs) {
+                localStorage.setItem('echopulse_favs', JSON.stringify(favs));
+            }
+
+            function toggleBookmark(id) {
+                let favs = getFavs();
+                let index = favs.indexOf(String(id));
+                let btn = document.getElementById('star-' + id);
+
+                if (index === -1) {
+                    favs.push(String(id)); // إضافة
+                    btn.innerHTML = '★';
+                    btn.classList.add('text-yellow-400');
+                    btn.classList.remove('text-slate-600');
+                } else {
+                    favs.splice(index, 1); // إزالة
+                    btn.innerHTML = '☆';
+                    btn.classList.remove('text-yellow-400');
+                    btn.classList.add('text-slate-600');
+                }
+                saveFavs(favs);
+            }
+
+            // تلوين النجوم عند تحميل الصفحة للمشاريع المحفوظة مسبقاً
+            document.addEventListener('DOMContentLoaded', () => {
+                let favs = getFavs();
+                favs.forEach(id => {
+                    let btn = document.getElementById('star-' + id);
+                    if (btn) {
+                        btn.innerHTML = '★';
+                        btn.classList.add('text-yellow-400');
+                        btn.classList.remove('text-slate-600');
+                    }
+                });
+            });
+
+            // --- 2. نظام العرض (الفلاتر) ---
+            let showingFavsOnly = false;
+
+            function toggleFavoritesView() {
+                showingFavsOnly = !showingFavsOnly;
+                let favs = getFavs();
+                let cards = document.querySelectorAll('.repo-card');
+                let btn = document.getElementById('fav-view-btn');
+
+                if (showingFavsOnly) {
+                    btn.innerHTML = '🔙 العودة للكل';
+                    btn.classList.add('bg-yellow-500/20', 'border-yellow-500/50');
+                    let count = 0;
+                    cards.forEach(card => {
+                        let id = card.getAttribute('data-repo-id');
+                        if (favs.includes(id)) {
+                            card.style.display = 'block';
+                            count++;
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                    document.getElementById('filter-status').innerHTML = 'تصفية حسب: <span class="bg-yellow-500/20 text-yellow-400 px-2 py-1 rounded mx-2">⭐ المفضلة</span> (' + count + ' نتائج)';
+                } else {
+                    btn.innerHTML = '<span>⭐</span> عرض مفضلتي';
+                    btn.classList.remove('bg-yellow-500/20', 'border-yellow-500/50');
+                    resetFilter();
+                }
+            }
+
+            function filterByTag(tag) {
+                if(showingFavsOnly) toggleFavoritesView(); // إلغاء وضع المفضلة إذا تم اختيار وسم
+
+                let cards = document.querySelectorAll('.repo-card');
+                let count = 0;
+                cards.forEach(card => {
+                    let tags = card.getAttribute('data-topics').split(',');
+                    if (tags.includes(tag)) {
+                        card.style.display = 'block';
+                        count++;
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+
+                document.getElementById('filter-status').innerHTML =
+                    'تصفية حسب: <span class="bg-emerald-500/20 px-2 py-1 rounded mx-2">#' + tag + '</span> (' + count + ' نتائج) ' +
+                    '<button onclick="resetFilter()" class="mr-4 text-red-400 hover:text-red-300 underline text-xs">✖ إلغاء الفلتر</button>';
+            }
+
+            function resetFilter() {
+                let cards = document.querySelectorAll('.repo-card');
+                cards.forEach(card => card.style.display = 'block');
+                document.getElementById('filter-status').innerHTML = '';
+            }
+        </script>
+    </body>
+    </html>
+    
